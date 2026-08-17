@@ -1,0 +1,40 @@
+{
+  "name": "agent-knowledge-base",
+  "private": true,
+  "description": "Copy-paste template for an OKF-based agent knowledge & memory base",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deniz-adbeam/agent-knowledge-base.git"
+  },
+  "homepage": "https://github.com/deniz-adbeam/agent-knowledge-base#readme",
+  "bugs": {
+    "url": "https://github.com/deniz-adbeam/agent-knowledge-base/issues"
+  },
+  "author": "deniz-adbeam",
+  "license": "MIT",
+  "scripts": {
+    "commit": "cz",
+    "prepare": "husky",
+    "lint:commits": "commitlint --from=origin/main --to=HEAD"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "cz-customizable": "^7.5.0",
+    "husky": "^9.1.0",
+    "semantic-release": "^24.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
+    }
+  }
+}

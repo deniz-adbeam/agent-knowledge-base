@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+
+# Temp
+*.tmp
+
+# Derived graph artifacts — regenerate with: python3 tools/build-graph.py
+graph.json
+graph.html
+__pycache__/
+*.pyc
+
+# Node (release tooling only — not needed to use a copy of this repo)
+node_modules/
+package-lock.json
+
+# Local-only agent config — never tracked, never shipped with this template.
+# Adopting teams get .github/skills/ + AGENTS.md; this stays on this machine only.
+.claude/
+CLAUDE.md

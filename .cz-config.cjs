@@ -1,0 +1,28 @@
+module.exports = {
+  types: [
+    { value: "feat", name: "feat:     A new feature" },
+    { value: "fix", name: "fix:      A bug fix" },
+    { value: "docs", name: "docs:     Documentation only changes" },
+    { value: "style", name: "style:    Code style changes (formatting, etc.)" },
+    { value: "refactor", name: "refactor: Code restructure without feature/fix" },
+    { value: "perf", name: "perf:     Performance improvements" },
+    { value: "test", name: "test:     Adding or updating tests" },
+    { value: "chore", name: "chore:    Maintenance tasks" },
+    { value: "ci", name: "ci:       CI/CD changes" },
+    { value: "revert", name: "revert:   Revert a previous commit" },
+  ],
+  scopes: [{ name: "tools" }, { name: "skills" }, { name: "docs" }, { name: "ci" }],
+  allowCustomScopes: true,
+  messages: {
+    type: "Select the type of change:",
+    scope: "Scope of this change (optional):",
+    subject: "Short description:\n",
+    body: 'Longer description (optional). Use "|" for new lines:\n',
+    breaking: "List any BREAKING CHANGES (optional):\n",
+    confirmCommit: "Proceed with this commit?",
+  },
+  subjectLimit: 100,
+  allowBreakingChanges: ["feat", "fix", "perf", "refactor"],
+  skipQuestions: ["footer"],
+  subjectSeparator: ": ",
+};

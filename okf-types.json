@@ -1,0 +1,12 @@
+{
+  "concept":   { "label": "Concept",   "color": "#a371f7", "order": 1 },
+  "decision":  { "label": "Decision",  "color": "#8957e5", "order": 2 },
+  "system":    { "label": "System",    "color": "#4f8ff7", "order": 3 },
+  "datastore": { "label": "Datastore", "color": "#3fb950", "order": 4 },
+  "runbook":   { "label": "Runbook",   "color": "#d29922", "order": 5 },
+  "reference": { "label": "Reference", "color": "#56d4dd", "order": 6 },
+  "skill":     { "label": "Skill",     "color": "#e3b341", "order": 7 },
+  "tool":      { "label": "Tool",      "color": "#db61a2", "order": 8 },
+  "case":      { "label": "Case",      "color": "#39c5cf", "order": 9 },
+  "note":      { "label": "Note",      "color": "#8b949e", "order": 99 }
+}
